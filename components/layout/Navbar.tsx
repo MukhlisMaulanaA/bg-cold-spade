@@ -1,4 +1,5 @@
 "use client";
+import { Scooter } from 'lucide-react';
 
 import { useState } from "react";
 import Link from "next/link";
@@ -10,27 +11,27 @@ export const Navbar = () => {
     <nav className="bg-primary border-b-4 border-secondary">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <span className="text-secondary text-xl">🛵</span>
-          <span className="font-display text-xl tracking-widest text-secondary">
+          <span className="text-secondary text-xl"><Scooter size={52}/></span>
+          <span className="font-display text-xl tracking-widest font-black text-secondary">
             COLD SPADE
           </span>
         </div>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center space-x-10">
-          <Link href="#collection" className="text-secondary uppercase text-sm tracking-widest">
+          <Link href="#collection" className="font-display text-md font-bold text-secondary hover:text-white transition uppercase tracking-widest border-b-2 border-transparent hover:border-secondary">
             Our Scooters
           </Link>
-          <Link href="#" className="text-secondary uppercase text-sm tracking-widest">
+          <Link href="#" className="font-display text-md font-bold text-secondary hover:text-white transition uppercase tracking-widest border-b-2 border-transparent hover:border-secondary">
             Our Story
           </Link>
-          <Link href="#contact" className="text-secondary uppercase text-sm tracking-widest">
+          <Link href="#contact" className="font-display text-md font-bold text-secondary hover:text-white transition uppercase tracking-widest border-b-2 border-transparent hover:border-secondary">
             Contact
           </Link>
-
-          <button className="bg-secondary text-primary px-4 py-2 text-xs uppercase tracking-widest">
-            Buy Now
-          </button>
+          
+          <a href='#' className="bg-secondary text-primary px-6 py-2 border-2 font-bold border-secondary font-display uppercase tracking-widest hover:bg-white hover:text-secondary transition shadow-lg">
+            Get It Now!
+          </a>
         </div>
 
         {/* Mobile Toggle */}

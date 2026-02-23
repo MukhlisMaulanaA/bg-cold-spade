@@ -1,5 +1,7 @@
 "use client";
 
+import { MapPin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { useState, ChangeEvent, FormEvent } from "react";
 
 interface ContactFormData {
@@ -58,7 +60,7 @@ export const ContactSection = () => {
 
               <div className="space-y-6 text-secondary">
                 <div className="flex items-start gap-3">
-                  <span className="text-accent text-xl">📍</span>
+                  <span className="text-accent text-xl"><MapPin /></span>
                   <div>
                     <p className="uppercase text-sm font-semibold tracking-widest">
                       Workshop
@@ -72,7 +74,7 @@ export const ContactSection = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <span className="text-accent text-xl">✉️</span>
+                  <span className="text-accent text-xl"><Mail /></span>
                   <div>
                     <p className="uppercase text-sm font-semibold tracking-widest">
                       Electronic Mail
@@ -90,7 +92,7 @@ export const ContactSection = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
 
                 <div>
-                  <label className="block text-xs uppercase tracking-widest text-secondary mb-2">
+                  <label className="block text-md font-semibold uppercase tracking-widest text-secondary mb-2">
                     Parent's Name
                   </label>
                   <input
@@ -99,12 +101,12 @@ export const ContactSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full border border-gray-400 bg-[#E8DFC9] px-4 py-3 focus:outline-none focus:border-secondary"
+                    className="w-full border-2 border-gray-400 bg-[#E8DFC9] px-4 py-3 focus:outline-none focus:border-primary"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs uppercase tracking-widest text-secondary mb-2">
+                  <label className="block text-md font-semibold uppercase tracking-widest text-secondary mb-2">
                     Email Address
                   </label>
                   <input
@@ -113,12 +115,12 @@ export const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full border border-gray-400 bg-[#E8DFC9] px-4 py-3 focus:outline-none focus:border-secondary"
+                    className="w-full border-2 border-gray-400 bg-[#E8DFC9] px-4 py-3 focus:outline-none focus:border-primary"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs uppercase tracking-widest text-secondary mb-2">
+                  <label className="block text-md font-semibold uppercase tracking-widest text-secondary mb-2">
                     Message
                   </label>
                   <textarea
@@ -127,7 +129,7 @@ export const ContactSection = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="w-full border border-gray-400 bg-[#E8DFC9] px-4 py-3 focus:outline-none focus:border-secondary resize-none"
+                    className="w-full border-2 border-gray-400 bg-[#E8DFC9] px-4 py-3 focus:outline-none focus:border-primary resize-none"
                   />
                 </div>
 

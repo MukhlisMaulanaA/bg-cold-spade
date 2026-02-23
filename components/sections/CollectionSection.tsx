@@ -94,6 +94,9 @@ export const CollectionSection: React.FC = () => {
             </a>
           ))}
         </div>
+        <div className="mt-16 text-center">
+          <a className="inline-block border-b-2 border-secondary dark:border-secondary text-secondary dark:text-secondary font-display text-lg font-bold uppercase tracking-widest hover:text-accent hover:border-accent transition pb-1" href="#">View Full Catalog</a>
+        </div>
       </div>
     </section>
   );

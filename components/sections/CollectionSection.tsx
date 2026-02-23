@@ -13,7 +13,7 @@ const renderStars = (rating: number) => {
 
   for (let i = 0; i < fullStars; i++) {
     stars.push(
-      <span key={`full-${i}`} className="material-icons text-base">
+      <span key={`full-${i}`} className="material-symbols-rounded">
         star
       </span>
     );
@@ -21,7 +21,7 @@ const renderStars = (rating: number) => {
 
   if (halfStar) {
     stars.push(
-      <span key="half" className="material-icons text-base">
+      <span key="half" className="material-symbols-rounded">
         star_half
       </span>
     );
@@ -45,9 +45,10 @@ export const CollectionSection: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {scooters.map((scooter: Scooter) => (
-            <div
+            <a
+              href="#"
               key={scooter.id}
-              className="group relative bg-white vintage-border vintage-shadow p-4"
+              className="group relative bg-white border-2 border-secondary vintage-shadow p-4 shadow-[6px_4px_0px_0px_rgba(0,_0,_0,_0.8)]"
             >
               <div className="relative overflow-hidden">
                 <Image
@@ -62,7 +63,7 @@ export const CollectionSection: React.FC = () => {
                 />
 
                 {scooter.badge && (
-                  <div className="absolute top-2 right-2 bg-accent-red text-white text-xs font-bold px-2 py-1 uppercase">
+                  <div className="absolute top-2 right-2 bg-accent text-white text-xs font-bold px-2 py-1 uppercase">
                     {scooter.badge}
                   </div>
                 )}
@@ -90,7 +91,7 @@ export const CollectionSection: React.FC = () => {
                   View Details
                 </span>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

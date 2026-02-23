@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/sections/HeroSection";
 import { PromiseSection } from "@/components/sections/PromiseSection";
 import { CollectionSection } from "@/components/sections/CollectionSection";
+import { QuoteSection } from "@/components/sections/QuoteSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 
 export default function HomePage() {
@@ -10,6 +11,7 @@ export default function HomePage() {
         <HeroSection/>
         <PromiseSection/>
         <CollectionSection />
+        <QuoteSection />
         <ContactSection />
       </main>
     </>

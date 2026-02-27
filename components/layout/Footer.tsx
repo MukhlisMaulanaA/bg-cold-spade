@@ -31,12 +31,12 @@ export const Footer = () => {
 
           {/* BRAND COLUMN */}
           <div>
-            <div className="flex items-center space-x-2 mb-6">
+            <Link href="/" className="flex items-center space-x-2 mb-6">
               <span className="text-3xl text-primary"><Scooter size={52}/></span>
               <span className="text-2xl font-display tracking-wide text-primary uppercase">
                 Cold Spade
               </span>
-            </div>
+            </Link>
 
             <p className="text-gray-400 text-sm leading-relaxed">
               Crafting high-quality, inexpensive scooters that emphasize form,

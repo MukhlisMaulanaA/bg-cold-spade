@@ -19,7 +19,7 @@ export default function CataloguePage() {
           </svg>
         </div>
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight text-primary sm:text-5xl lg:text-6xl font-display uppercase">
+          <h1 className="text-4xl font-extrabold tracking-widest text-primary sm:text-5xl lg:text-6xl font-display uppercase">
             Product Catalogue
           </h1>
           <p className="mt-4 text-xl text-beige max-w-3xl mx-auto font-serif italic">"Rekindling the magic of childhood movement. Where form meets fancy, and adventure awaits around every corner."</p>

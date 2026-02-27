@@ -4,6 +4,7 @@ import React from "react";
 import { scooters } from "../../data/scooters";
 import { Scooter } from "../../types/Scooter";
 import Image from "next/image";
+import Link from "next/link";
 
 const renderStars = (rating: number) => {
   const fullStars = Math.floor(rating);
@@ -95,7 +96,7 @@ export const CollectionSection: React.FC = () => {
           ))}
         </div>
         <div className="mt-16 text-center">
-          <a className="inline-block border-b-2 border-secondary dark:border-secondary text-secondary dark:text-secondary font-display text-lg font-bold uppercase tracking-widest hover:text-accent hover:border-accent transition pb-1" href="#">View Full Catalog</a>
+          <Link href="/catalogue" className="inline-block border-b-2 border-secondary dark:border-secondary text-secondary dark:text-secondary font-display text-lg font-bold uppercase tracking-widest hover:text-accent hover:border-accent transition pb-1">View Full Catalog</Link>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-r from-cream to-[#EDE5D3] py-20">
+    <section id="hero" className="bg-gradient-to-r from-cream to-[#EDE5D3] py-20">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
         {/* LEFT */}

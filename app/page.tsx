@@ -14,7 +14,6 @@ export default function HomePage() {
         <CollectionSection />
         <QuoteSection />
         <ContactSection />
-        <Footer />
       </main>
     </>
   );

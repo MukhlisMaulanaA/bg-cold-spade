@@ -10,12 +10,12 @@ export const Navbar = () => {
   return (
     <nav className="bg-primary border-b-4 border-secondary">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2">
           <span className="text-secondary text-xl"><Scooter size={52}/></span>
           <span className="font-display text-xl tracking-widest font-black text-secondary">
             COLD SPADE
           </span>
-        </div>
+        </Link>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center space-x-10">

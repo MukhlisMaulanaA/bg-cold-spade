@@ -101,7 +101,7 @@ export const ContactSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full border-2 border-gray-400 bg-[#E8DFC9] px-4 py-3 focus:outline-none focus:border-primary"
+                    className="w-full border-2 border-gray-400 bg-[#E8DFC9] px-4 py-3 focus:outline-none focus:border-primary"    
                   />
                 </div>
 
@@ -135,7 +135,7 @@ export const ContactSection = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-secondary text-white py-4 uppercase tracking-widest font-semibold hover:bg-[#1f2f3a] transition"
+                  className="w-full bg-secondary text-white py-4 uppercase tracking-widest font-semibold hover:bg-[#1f2f3a] transition cursor-pointer"
                 >
                   Send Message
                 </button>

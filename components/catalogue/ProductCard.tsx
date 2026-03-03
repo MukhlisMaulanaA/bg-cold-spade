@@ -5,6 +5,7 @@ import { CirclePlus } from 'lucide-react';
 
 import { Product } from "@/types/Product";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   product: Product;
@@ -28,9 +29,25 @@ export const ProductCard = ({ product }: Props) => {
       </div>
 
       <div className="p-6">
-        <h3 className="text-xl font-display text-secondary mb-2">
-          {product.name}
-        </h3>
+        {/** prefer explicit slug if present, otherwise compute kebab-case slug */}
+        {(() => {
+          const slugify = (name: string) =>
+            name
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/(^-|-$)/g, "");
+
+          const slug = (product as any).slug ?? slugify(product.name);
+
+          return (
+            <Link
+              href={`/products/${slug}`}
+              className="text-xl font-display text-secondary mb-2 block"
+            >
+              {product.name}
+            </Link>
+          );
+        })()}
 
         <p className="text-gray-600 text-sm mb-4 line-clamp-2">
           {product.description}

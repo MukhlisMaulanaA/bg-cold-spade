@@ -7,7 +7,7 @@
 <h2> 🌐 Live Production </h2>
   <p style="font-size: 18px;"> This website is already in production. Hosted using Github Pages. You can access through this link:
   <span>
-    <a href="https://web-sihacov.vercel.app/" style="font-weight: semi-bold; color: #525CEB;"> Website Sihacov </a>
+    <a href="https://mukhlismaulanaa.github.io/bg-cold-spade/" style="font-weight: semi-bold; color: #525CEB;"> BG Cold Spade </a>
   </span>
   </p>
 

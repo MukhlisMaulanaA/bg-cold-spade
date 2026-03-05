@@ -26,6 +26,4 @@
 	<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
 </div>
 
-<h6>Template by <span><a href="https://uideck.com/"> UIdeck</a> and Next.js Templates</span></h6>
-
-<h5 align="center">Copyright © 2024 SIHACOV</h5>
+<h5 align="center">Copyright © 2026 BG Cold Spade</h5>
